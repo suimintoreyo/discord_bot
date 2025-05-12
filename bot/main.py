@@ -1,6 +1,10 @@
 import os
+from dotenv import load_dotenv
 import discord
 import google.generativeai as genai
+
+# .env ファイルから環境変数を読み込む
+load_dotenv()
 
 # 環境変数からトークンと API キーを取得
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
@@ -27,7 +31,6 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    # ユーザーからのメッセージを Gemini API に送信
     prompt = message.content
     try:
         response = model.generate_content(prompt)
