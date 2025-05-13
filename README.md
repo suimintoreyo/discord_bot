@@ -1,44 +1,37 @@
 # Discord Chat Bot
 
 ディスコードでチャットボットを実装するためのシステムです。
-現状、開発中のため、ローカル環境での実行となる。
+
+現在、開発中のため、ローカル環境での実行となる。
 
 ## 環境構築
 
-1. python をどうにかインストール
+言語のインストール
 
-2. リポジトリーをローカルにコピーする
+**1.** python をどうにかインストール
 
-repository クローンコマンド:
-```
-git clone <リポジトリーのURL>
-```
+**2.** repository クローンコマンド:
+```git clone <リポジトリーのURL>```
 
-3. 仮想環境作成コマンド:
-```
-python -m venv <仮想環境名>
-```
+**3.** python 仮想環境作成コマンド:
+```python -m venv <仮想環境名>```
 
-4. 仮想環境アクティブ化コマンド：
-```
-venv\Scripts\activate
-```
+**4.** 仮想環境アクティブ化コマンド:
+```venv\Scripts\activate```
 
 
-5. requirement.txt 適応コマンド:
-```
-pip install -r requirements.txt
-```
+**5.** requirement.txt 適応コマンド:
+```pip install -r requirements.txt```
 
-6. .env ファイルを作成し、下記コードを記入
+**6.** .env ファイルを作成し、下記コードを記入
 
 ```
 # "=" の後に Discord bot のトークンと Gemini APIキーをそれぞれセットする
 DISCORD_TOKEN=set_your_bot_token
 GEMINI_API_KEY=set_your_api_key
 ```
-<br>
 
+### envのキーの取得方法
 **Discord Dvelopers** (https://discord.com/developers/applications) より Discord bot を作成し、tokenを取得する。
 
 token を .env 環境変数ファイルへ適切な箇所へペーストする。
@@ -55,10 +48,10 @@ discord botを下記URLより作成し、tokenを取得する。
 gemini api keyを下記URLより取得
 
 : https://aistudio.google.com/app/apikey
--->
 
-それぞれ取得キーを.env環境変数ファイルへ適切な箇所へペーストする  
-<br>
+
+それぞれ取得キーを .env 環境変数ファイルへ適切な箇所へペーストする  
+-->
 
 ## Devs memo
 
