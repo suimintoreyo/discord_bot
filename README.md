@@ -1,4 +1,4 @@
-## docs
+## Document
 dicord.js document （ディスコードドキュメント）
 
 : https://discord.js.org/docs/packages/discord.js/14.19.3
@@ -25,4 +25,9 @@ gemini api keyを下記URLより取得
 それぞれ取得キーを.env環境変数ファイルへ適切な箇所へペーストする  
 <br>
 
+---
+## Devs memo
+
+requirement.txtの生成コマンド:
+```pip freeze > requirements.txt```
 
