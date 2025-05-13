@@ -1,71 +1,94 @@
 # Discord Chat Bot
 
-ディスコードでチャットボットを実装するためのシステムです。
+Discordでチャットボットを実装するためのシステムです。
 
-現在、開発中のため、ローカル環境での実行となる。
+現在開発中のため、ローカル環境での実行を情報提供します。
 
 ## 環境構築
 
-言語のインストール
+### 必須環境
 
-**1.** python をどうにかインストール
+* Python 3.10 以降をインストール
 
-**2.** repository クローンコマンド:
-```git clone <リポジトリーのURL>```
+### セットアップ手順
 
-**3.** python 仮想環境作成コマンド:
-```python -m venv <仮想環境名>```
+1. Python をインストール
 
-**4.** 仮想環境アクティブ化コマンド:
-```venv\Scripts\activate```
+2. リポジトリーをクローン:
 
+   ```bash
+   git clone <repository-url>
+   ```
 
-**5.** requirement.txt 適応コマンド:
-```pip install -r requirements.txt```
+   `<repository-url>`：リポジトリのURLを入力
 
-**6.** .env ファイルを作成し、下記コードを記入
+3. Python の仮想環境を作成:
 
-```
-# "=" の後に Discord bot のトークンと Gemini APIキーをそれぞれセットする
-DISCORD_TOKEN=set_your_bot_token
-GEMINI_API_KEY=set_your_api_key
-```
+   ```bash
+   python -m venv <venv-name>
+   ```
 
-### envのキーの取得方法
-**Discord Dvelopers** (https://discord.com/developers/applications) より Discord bot を作成し、tokenを取得する。
+   `<venv-name>`：作成する仮想環境の名前を入力（例: venv）
 
-token を .env 環境変数ファイルへ適切な箇所へペーストする。
+4. 仮想環境をアクティブ化:
 
-**Google AI Studio** (https://aistudio.google.com/app/apikey) より Gemini API key を取得する。
+   * Windows:
 
-api key を .env 環境変数ファイルへ適切な箇所へペーストする。
+     ```bash
+     .\<venv-name>\Scripts\activate
+     ```
 
-<!--
-discord botを下記URLより作成し、tokenを取得する。
+     `<venv-name>`：作成した仮想環境の名前
+   * macOS/Linux:
 
-: https://discord.com/developers/applications
+     ```bash
+     source <venv-name>/bin/activate
+     ```
 
-gemini api keyを下記URLより取得
+     `<venv-name>`：作成した仮想環境の名前
 
-: https://aistudio.google.com/app/apikey
+5. 依存関係をインストール:
 
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-それぞれ取得キーを .env 環境変数ファイルへ適切な箇所へペーストする  
--->
+6. `.env` ファイルを作成し、以下を記載:
 
-## Devs memo
+   ```env
+   DISCORD_TOKEN=set_your_bot_token
+   GEMINI_API_KEY=set_your_api_key
+   ```
 
-- requirement.txt 生成コマンド:
-```pip freeze > requirements.txt```
+   `set_your_bot_token`：Discord Botのトークンを入力
+   `set_your_api_key`：Gemini APIキーを入力
 
-- requirement.txt 適応コマンド:
-```pip install -r requirements.txt```
-### Document
-**python**
-discordpy document (https://discordpy.readthedocs.io/ja/stable/)
+### API キーの取得方法
 
-**node.js**
-discord.js document (https://discord.js.org/docs/packages/discord.js/14.19.3)
+* Discord Bot Token: ([https://discord.com/developers/applications](https://discord.com/developers/applications)) でアプリケーションを作成し、Bot を追加して Token を発行
+* Gemini API Key: ([https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)) より発行
 
+獲得したキーを `.env` に記載してください
+
+---
+
+## 開発メモ
+
+* `requirements.txt` を生成:
+
+  ```bash
+  pip freeze > requirements.txt
+  ```
+
+* `requirements.txt` を適用:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+## 参考文献
+
+* Python: ([https://discordpy.readthedocs.io/ja/stable/](https://discordpy.readthedocs.io/ja/stable/))
+* Node.js: ([https://discord.js.org/docs/packages/discord.js/14.19.3](https://discord.js.org/docs/packages/discord.js/14.19.3))
 
 ---
