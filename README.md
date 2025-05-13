@@ -61,8 +61,11 @@ gemini api keyを下記URLより取得
 - requirement.txt 適応コマンド:
 ```pip install -r requirements.txt```
 ### Document
-  
-dicord.js document (https://discord.js.org/docs/packages/discord.js/14.19.3)
+**python**
+discordpy document (https://discordpy.readthedocs.io/ja/stable/)
+
+**node.js**
+discord.js document (https://discord.js.org/docs/packages/discord.js/14.19.3)
 
 
 ---
