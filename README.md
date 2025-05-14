@@ -1,4 +1,4 @@
-# Discord Chat Bot
+# Discord Chat Bot (python)
 
 Discordでチャットボットを実装するためのシステムです。
 
